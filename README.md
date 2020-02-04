@@ -1,5 +1,4 @@
 # AspNetCoreAPI
-Test Application
 
 Note: Don't forget to change the Connection String to match your database
 1. Under API project, look for appsettings.json
