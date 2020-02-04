@@ -1,0 +1,22 @@
+﻿using Data.ViewModels.Common;
+using Microsoft.AspNetCore.Mvc;
+using System.Diagnostics;
+
+namespace API.Controllers
+{
+    public class HomeController : Controller
+    {
+        /// <summary>
+        /// Loads the Index View
+        /// </summary>
+        public IActionResult Index()
+        {
+            return View();
+        }
+
+        public IActionResult Error()
+        {
+            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+    }
+}
